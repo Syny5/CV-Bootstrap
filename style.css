@@ -1,0 +1,96 @@
+#propos{
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lead{
+  font-family: 'ZCOOL XiaoWei';
+  font-style: italic;
+}
+
+h1{
+  font-family: 'Shojumaru';
+}
+
+#conteneur1 {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-flow : wrap column;
+  justify-content: center;
+  align-items: center;
+}
+
+#conteneur2 {
+  margin-top: 25px;
+  display : flex;
+  width: 80%;
+  height : 100%;
+  align-items: center;
+  justify-content: center;
+  flex-flow : column;
+}
+
+#conteneur3 {
+  margin-top: 25px;
+  width : 20%;
+  height : 100%;
+  display: flex;
+}
+
+#nom {
+  display: flex;
+  margin: 2px;
+  color: black;
+}
+
+#par {
+  display: flex;
+  margin : 2px;
+  color: #303030;
+  font-family: 'Geo';
+  font-size: 18px;
+}
+/* Le margin a permis de resserer les deux textes */
+#profil {
+  display: flex;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 4px 8px 20px;
+}
+
+@media screen and (max-width: 800px) {
+
+  #conteneur1{
+    height: 15%;
+    flex-flow: nowrap column;
+  }
+
+  #navlongue{
+    display: none;
+  }
+
+  #conteneur2{
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  #conteneur3{
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  #profil{
+    height: 200px;
+    margin-top: 20px;
+  }
+  }
+
+@media screen and (min-width: 800px) {
+
+#navcourte{
+    display: none;
+  }
