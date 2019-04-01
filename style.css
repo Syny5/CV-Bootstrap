@@ -1,3 +1,7 @@
+.container-fluid{
+  background-color: #EFEFEF;
+}
+
 #jumbotron{
   background-image: url(/home/syn/Bootstrap/CV/bear.jpg);
   width: 100%;
@@ -6,6 +10,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.prof{
+  text-align: center;
+  font-family: times;
 }
 
 #propos{
@@ -19,6 +28,14 @@
   font-style: italic;
 }
 
+.card{
+  border-radius: 20px;
+}
+
+.nav{
+  margin-top: 30px;
+}
+
 h1{
   font-family: 'Shojumaru';
   color: #F4FEFE;
@@ -27,6 +44,9 @@ h1{
 
 h2{
   font-family: 'ZCOOL XiaoWei';
+  text-align: center;
+  text-decoration: underline;
+  color: #080706
 }
 
 #H3{
@@ -34,6 +54,11 @@ h2{
   text-align: left;
   font-style: italic;
   font-weight: bold;
+  color: #22427C;
+}
+
+h4{
+  font-style: italic;
 }
 
 #conteneur1 {
@@ -65,7 +90,7 @@ h2{
 #nom {
   display: flex;
   margin: 2px;
-  color: black;
+  color: #080706;
 }
 
 #par {
@@ -85,6 +110,148 @@ h2{
 
 .card{
   margin-top: 40px;
+}
+
+#exp{
+  margin-top: 15px;
+}
+
+#boulot {
+  display: flex;
+  width: 100%;
+  height: 3.5%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+#GO {
+  display: flex;
+  width: 20%;
+  height: 100%;
+}
+
+#lcdg {
+  display: flex;
+  width: 35%;
+  height: 100%;
+}
+
+#Jeugeek{
+  display: flex;
+  height: 100%;
+  width: 30%;
+}
+
+#viseo {
+  display: flex;
+  height: 100%;
+  width: 15%;
+}
+
+#GOimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#lcdgimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+#Jeugeekimg{
+  display: flex;
+  width: 100%;
+  height: 100%
+}
+
+#viseoimg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover
+{
+  /* Rotation des liens au survol */
+  /* -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg); */
+
+  /* Zoom de 10% des liens au survol */
+  -webkit-transform:scale(1.10); /* Safari et Chrome */
+  -moz-transform:scale(1.10); /* Firefox */
+  -ms-transform:scale(1.10); /* Internet Explorer 9 */
+  -o-transform:scale(1.10); /* Opera */
+  transform:scale(1.10);
+  text-decoration: none;
+}
+
+#details{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#loisirs {
+  display: flex;
+  height: 3%;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#fun{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#RS {
+  display: flex;
+  width: 100%;
+  height: 4%;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#github {
+  display: flex;
+}
+
+#linkedin {
+  display: flex;
+}
+
+#facebook{
+  display: flex;
+}
+
+#print{
+  display: flex;
+  margin-left: 8px;
+}
+
+#num{
+  text-align: center;
+  font-weight: bold;
+  margin: 2px;
+}
+
+#contact{
+    background-color: #BBD2E1;
+  border-radius: 40px
 }
 
 @media screen and (max-width: 800px) {
@@ -114,6 +281,32 @@ h2{
     height: 200px;
     margin-top: 20px;
   }
+
+  #boulot{
+    flex-flow: nowrap column;
+    height: 14%;
+    justify-content: center;
+  }
+
+  #GO{
+    width: 32%;
+  }
+
+  #lcdg{
+    width: 45%;
+    margin-top: 10px;
+  }
+
+  #Jeugeek{
+    width: 41%
+  }
+
+  #viseo{
+    margin-top: 20px;
+    width: 25%
+  }
+
+
   }
 
 @media screen and (min-width: 800px) {
