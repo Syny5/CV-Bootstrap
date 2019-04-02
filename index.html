@@ -55,7 +55,7 @@
       <div class="prof">
         <h4>Développeur Web . Rédacteur . Community Manager</h4>
       </div>
-      <ul class="nav nav-tabs <justify-content-center></justify-content-center>" id="navlongue">
+      <ul class="nav nav-tabs justify-content-center" id="navlongue">
         <li class="nav-item">
           <a class="nav-link active" href="#propos">À Propos</a>
         </li>
@@ -95,7 +95,7 @@
           <div class="card-body" id="comp">
             <h2 class="card-title">Compétences</h2>
             <h3 id="H3">Codage</h3>
-            <p class="card-text">HTML5 . CSS3 . PHP . JavaScript</p>
+            <p class="card-text">HTML5 . CSS3 . JavaScript . Bootstrap . PHP</p>
             <h3 id="H3">WebMarketing</h3>
             <p class="card-text">Réseaux Sociaux . Optimisation SEO</p>
             <h3 id="H3">Bureautique</h3>
@@ -133,10 +133,50 @@
             <a href="http://www.expert-viseo.fr/"><img src="img/viseo.png" id="viseoimg"/></a>
           </div>
       </div>
-      <div id="details">
-          <a href="details.html" onclick="open('details.html', 'Popup');">
-            <button type="button" class="btn btn-dark btn-lg">Détails</button>
-          </a>
+
+      <!-- Button trigger modal -->
+      <div id="btn">
+        <button type="button" class="btn btn-dark w-25 p-3" data-toggle="modal" data-target="#exampleModal">
+          Détails
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Expériences professionnelles</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img src="img/go.png" id="GOmod"/>
+              <h4>2015 - 2016 (10 mois) - Bénévolat</h4>
+              <p id="pmod">Rédaction d’actualités et de guides sur le jeu-vidéo Hearthstone.
+                Suivi des joueurs de la scène eSport.</p>
+              <img src="img/lcdgnoir.png" id="lcdgmod"/>
+              <h4>2015 - Aujourd'hui - Autoentrepreneur</h4>
+              <p id="pmod">Création et animation de la page Facebook, du compte Twitter, et du site web.
+                Gestion des groupes et pages affiliées, promotion du
+                contenu sur des groupes externes, partenariats avec
+                des marques et des influenceurs, créations visuelles engageantes...</p>
+              <img src="img/jeugeek.png" id="Jeugeekmod"/>
+              <h4>2018 (6 mois) - Autoentrepreneur</h4>
+              <p id="pmod">Rôle d'animateur et de consultant pour la page Facebook de
+                l'EURL Geekraft. Aide au lancement du projet JeuGeek.com.</p>
+              <img src="img/viseo.png" id="viseomod"/>
+              <h4>2018 (6 mois) - Intérimaire</h4>
+              <p id="pmod">Rédaction d’articles de 300 mots orientés SEO
+              Sujets très variés : Matériel informatique, bassins
+              d’extérieur, bricolage, fonds de commerce...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="funny">
@@ -171,7 +211,7 @@
         </div>
       </footer>
     </div>
-    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

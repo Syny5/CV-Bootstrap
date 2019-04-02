@@ -12,6 +12,10 @@
   background-position: center;
 }
 
+#navcourte{
+  margin-left: 20px;
+}
+
 .prof{
   text-align: center;
   font-family: times;
@@ -195,10 +199,59 @@ a:hover
   text-decoration: none;
 }
 
-#details{
+#btn{
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-top: 15px;
+  align-items: center;
+}
+
+.modal-body{
+  background-color: #EFEFEF;
+}
+
+h4{
+  margin-left: 10px;
+  text-align: center;
+}
+
+#pmod{
+  margin: 2px;
+  margin-left: 35px;
+  text-align: center;
+}
+
+#GOmod {
+  width:160px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+#lcdgmod{
+  width: 300px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+#Jeugeekmod{
+  width: 200px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
+}
+
+#viseomod{
+  width: 160px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto ;
 }
 
 #loisirs {
